@@ -1,0 +1,28 @@
+{
+    "restaurants": [
+        {
+            "name": "Bollywood Theater"
+        },
+        {
+            "name": "Screen Door"
+        },
+        {
+            "name": "Pok Pok"
+        },
+        {
+            "name": "Lardo"
+        },
+        {
+            "name": "Deschutes Brewery"
+        },
+        {
+            "name": "Laughing Planet"
+        },
+        {
+            "name": "Chipotle"
+        },
+        {
+            "name": "McDonalds"
+        }
+    ]
+}
