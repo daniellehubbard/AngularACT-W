@@ -1,0 +1,36 @@
+{
+    "restaurants": [
+        {
+            "name": "Bollywood Theater",
+            "address": "3010 SE Division St"
+        },
+        {
+            "name": "Screen Door",
+            "address": "2337 E Burnside St"
+        },
+        {
+            "name": "Pok Pok",
+            "address": "3226 SE Division St"
+        },
+        {
+            "name": "Lardo",
+            "address": "1212 SE Hawthorne Blvd"
+        },
+        {
+            "name": "Deschutes Brewery",
+            "address": "2010 NW 11th Ave"
+        },
+        {
+            "name": "Laughing Planet",
+            "address": "1720 SW 4th Ave"
+        },
+        {
+            "name": "Chipotle",
+            "address": "1948 SW Broadway"
+        },
+        {
+            "name": "McDonalds",
+            "address": "8011 NE Martin Luther King Jr Blvd"
+        }
+    ]
+}
