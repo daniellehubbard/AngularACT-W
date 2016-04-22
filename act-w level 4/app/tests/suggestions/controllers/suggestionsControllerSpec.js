@@ -1,4 +1,8 @@
 //example based on https://docs.angularjs.org/guide/unit-testing
+//you must install Karma to run - npm install karma
+//then run by right clicking karma.conf.js and click "run'
+//to run via command line, run "karma start" (may need to reference karma installation location)
+//ex: $ ./node_modules/karma/bin/karma start
 
 describe('suggestions controller', function() {
 
