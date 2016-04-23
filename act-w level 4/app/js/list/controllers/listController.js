@@ -1,8 +1,10 @@
 'use strict';
 
-angular.module('myApp')
-.controller('ListCtrl', ['$scope', 'RestaurantRetrieverService', function($scope, restaurantRetrieverService) {
+var listController = function($scope, restaurantRetrieverService) {
+    $scope.restaurants = restaurantRetrieverService.getRestaurants();
 
-        $scope.restaurants = restaurantRetrieverService.getRestaurants();
+};
 
-}]);
+listController.$inject = ['$scope', 'RestaurantRetrieverService'];
+
+angular.module('myApp').controller('ListCtrl', listController);

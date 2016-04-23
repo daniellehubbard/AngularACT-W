@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('myApp')
+var suggestionsController = function($scope, restaurantRetrieverService) {
+    $scope.chosenRestaurant = '';
+    $scope.restaurants = restaurantRetrieverService.getRestaurants();
 
-    .controller('SuggestionsCtrl', ['$scope', 'RestaurantRetrieverService', function($scope, restaurantRetrieverService) {
-        $scope.chosenRestaurant = '';
-        $scope.restaurants = restaurantRetrieverService.getRestaurants();
+    $scope.suggest = function() {
+        var num = Math.floor(Math.random() * (($scope.restaurants.length-1) + 1));
+        $scope.chosenRestaurant = $scope.restaurants[num].name;
+    };
+};
 
-        $scope.suggest = function() {
-            var num = Math.floor(Math.random() * (($scope.restaurants.length-1) + 1));
-            $scope.chosenRestaurant = $scope.restaurants[num].name;
-        };
+suggestionsController.$inject = ['$scope', 'RestaurantRetrieverService'];
 
-
-    }]);
+angular.module('myApp').controller('SuggestionsCtrl', suggestionsController);
